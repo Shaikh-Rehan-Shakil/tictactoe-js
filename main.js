@@ -15,3 +15,5 @@ const winConditions = [
 let options = ["","","","","","","","",""];
 let currentPlayer = "X";
 let gameOver = false;
+
+// comment for green square

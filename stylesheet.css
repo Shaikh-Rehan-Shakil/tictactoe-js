@@ -5,10 +5,6 @@
     padding: 0; 
 }
 
-:root{
-    --cell-size:75px;
-}
-
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -26,9 +22,22 @@ body{
 }
 
 .cells{
-    width: var(--cell-size);
-    height: var(--cell-size);
+    width: 75px;
+    height: 75px;
     border: 2px solid;
     font-size:50px;
-    line-height: var(--cell-size);
+    line-height: 75px;
+}
+
+
+@media (max-width: 420px){
+    .cells{
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .title{
+        font-size: 1rem;
+    }
 }

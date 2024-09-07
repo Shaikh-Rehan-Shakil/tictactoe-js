@@ -7,6 +7,8 @@
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: #424242;
 }
 
 .gameContainer{
@@ -17,18 +19,24 @@ body{
     display: grid;
     grid-template-columns: repeat(3, auto);
     width: fit-content;
-    box-shadow: 0 0 0 2px black;
+    box-shadow: 0 0 0 2px ;
     margin: auto;
 }
 
 .cells{
     width: 75px;
     height: 75px;
-    border: 2px solid;
+    border: 2px solid #303030;
     font-size:50px;
     line-height: 75px;
 }
-
+.resetButton{
+    background-color: black;
+    color:#303030;
+    border: 1px solid #424242;
+    padding: 0.3em;
+    border-radius: 0.5em;
+}
 
 @media (max-width: 420px){
     .cells{
@@ -39,5 +47,11 @@ body{
 
     .title{
         font-size: 1rem;
+    }
+    
+    .resetButton{
+        padding: 0.1em;
+        border-radius: 0.1em;
+        font-size: 0.8rem;
     }
 }

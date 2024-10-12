@@ -78,7 +78,7 @@ function checkWinner(){
         if (cellA == "" || cellB == "" || cellC == "") {
             continue;
         }
-        // If all three cells are the same, a round is won.
+        // If all three cells are the same, a round is won
         else if (cellA === cellB && cellB === cellC) {
             roundWon = true;
             break;

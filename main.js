@@ -102,7 +102,6 @@ function checkWinner(){
 }
 
 function resetGame(){
-    // Resets the game state.
     currentPlayer = "X"; // Resets to player X.
     options = ["","","","","","","","",""]; // Clears the options array.
     statusText.textContent = `${currentPlayer}'s turn`; // Resets the status text.
